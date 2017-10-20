@@ -1,0 +1,423 @@
+body, button, td, select, textarea, input {
+    font: 12px Tahoma,Verdana,"宋体b8b\4f53",Helvetica,Arial,sans-serif;
+    color: #333;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.4 "\5b8b\4f53",Tahoma,Verdana,Helvetica,Arial,sans-serif;
+    color: #333;}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header-container{
+    background-color:#4e67aa;
+}
+.header-ctn{
+    width: 980px;
+    margin: 0 auto;
+    height: 45px;
+}
+.clearfloat{
+    zoom:1;
+}
+.clearfloat:after{
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0px;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    float: left;
+}
+.header-info li:hover{
+    background-color: #647ab6;
+}
+.header-logo{
+    width:108px ;
+    height:29px ;
+    background-image: url(./images/icon_common.png);
+    float: left;
+    margin: 10px 0 0 8px;
+}
+.header-info{
+    float: right;
+}
+.header-info-title{
+    display: block;
+    height: 35px;
+    padding: 10px 14px 0 14px;
+}
+.header-info-title-con{
+    float: left;
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background-position: -19px -97px;
+    background-image: url(./images/icon_common.png);
+    padding-right: 8px;
+}
+.header-info-title-htc{
+    color: #CDDCF3;
+    font-weight: bold;
+    font-family: Tahoma;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+.header-info-title-what{
+    width: 20px;
+    height: 22px;
+    background-image: url(./images/icon_commons.png);
+    background-position: 3px -946px;
+    display: inline-block;
+}
+.header-info-split{
+    width: 2px;
+    height: 24px;
+    background-image: url(./images/line_2_24.png);
+    float: left;
+    margin-left: -1px;
+    margin-top: 10px;
+}
+.header-info-ellipsis{
+    display: block;
+    height: 35px;
+    padding: 10px 14px 0 14px;
+}
+.header-info-ellipsi{
+    width: 18px;
+    height: 8px;
+    background-image: url(./images/icon_common.png);
+    background-position: -40px -102px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+.header-info-right{
+    display: block;
+    height: 35px;
+    padding: 10px 14px 0 14px;
+}
+.header-info-right-name{
+    color:white;
+    font-weight: bold;
+    float: left;
+    margin-top: 4px;
+    margin-left: 8px;
+    display: inline-block;
+}
+.header-info-right-down{
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    background-position: 0 -114px;
+    background-image: url(./images/icon_common.png);
+    float: left;
+    margin-left: 15px;
+}
+.nav-container{
+    background-color:#E8EDF3;
+}
+.nav-ctn{
+    width: 980px;
+    margin: 0 auto;
+    height: 36px;
+}
+.nav-ctn li:hover{
+    background-color:#D6e1eD;
+}
+.nav-ctn a{
+    display: block;
+    height:36px;
+    line-height: 36px;
+    color: #36c;
+    padding: 0 19px;
+    text-align: center;
+    font-size: 14px;
+}
+.nav-ctn span{
+    display: inline-block;
+}
+.new{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+.main-container{
+    position: relative;
+}
+.main-ctn{
+    width: 770px;
+    margin: 0 auto;
+    height: 1000px;
+    padding-top: 20px;
+}
+.nav-wrap{
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    height: 749px;
+}
+.nav-list{
+    width: 195px;
+}
+.nav-wrap a{
+    display: block;
+    height:35px ;
+    line-height:35px;
+    padding-left: 47px;
+    font-size: 12px;
+}
+.nav-list-Site-settings:hover{
+    background-color:#e8edf3;
+}
+.nav-ctn span{
+    display: inline-block;
+}
+#main_view {
+    display: block;
+}
+.main-section {
+    padding: 15px 0 4px 0;
+    width: 980px;
+    margin: 0 auto;
+}
+.photo-list-view {
+    margin-left: -5px;
+}
+.photo-view-li {
+    float: left;
+    display: inline;
+    width: 197px;
+    height: 197px;
+}
+.shadow{
+    display: none;
+    position: absolute;
+    margin: -4px 0 0 -4px;
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    border: #e0e0e0 solid 1px\9;
+    width: 208px;
+    height: 238px;
+    background: #FFF;
+    z-index: 1;
+}
+.photo-view-li:hover .shadow{
+    display: block;
+    z-index:11;
+}
+.photo-view-li:hover .photo-view-li-content .viewer-pics-to-save{
+    display: block;
+}
+.photo-view-li:hover .photo-view-li-content .viewer-pics-to-del{
+    display: block;
+}
+.share {
+    line-height: 16px;
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+}
+.share a.sina-share {
+    background-position: 0 -16px;
+}
+.share a.tencent-share {
+    background-position: 0 -32px;
+}
+.share a.kaixin001-share {
+    background-position: 0 -64px;
+}
+.share a.renren-share {
+    background-position: 0 -48px;
+}
+.share a.tencent-qzone-share {
+    background-position: 0 0px;
+}
+.share a {
+    margin-right: 0;
+    position: relative;
+    top: 3px;
+}
+.share a, .big-share a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999em;
+    cursor: pointer;
+    background-image: url(./images/share_16_160.png);
+    overflow: hidden;
+    line-height: 16px;
+    margin-left: 7px;
+}
+.photo-view-li-content {
+    position: absolute;
+    z-index: 10;
+}
+.photo-view-li:hover .photo-view-li-content{
+    z-index: 20;
+}
+.pics-img-container {
+    display: block;
+    padding: 4px 0 0 4px;
+    height: 192px;
+}
+.pics-img-container img {
+    float: left;
+}
+.viewer-pics-to-save {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    left: 10px;
+    top: 164px;
+    overflow: hidden;
+    height: 24px;
+    width: 24px;
+    background: #000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #FFF;
+    cursor: pointer;
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.viewer-pics-to-save-link{
+    display: none;
+    position: absolute;
+    background: url(./images/photo.png) no-repeat;
+    left: 14px;
+    top: 168px;
+    height: 16px;
+    width: 16px;
+    z-index: 31;
+    background-position: -60px -19px;
+}
+.photo-view-li:hover .viewer-pics-to-save-link{
+    display: block;
+}
+.photo-view-li:hover .viewer-pics-to-del-link{
+    display: block;
+}
+.viewer-pics-to-del-link{
+    display: none;
+    position: absolute;
+    background: url(./images/sms_nav_16_80.png) no-repeat 0 -48px;
+    height: 16px;
+    width: 16px;
+    right: 9px;
+    top: 13px;
+    z-index: 31;
+}
+.viewer-pics-to-del {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    right: 5px;
+    top: 9px;
+    overflow: hidden;
+    height: 24px;
+    width: 24px;
+    background: #000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #FFF;
+    cursor: pointer;
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.albums-slide-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 100;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.albums-slide-structure-container {
+    display: inline-block;
+    position: relative;
+    z-index: 120;
+}
+.albums-slide-photo-container {
+    position: relative;
+    background: #FFF;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 8px;
+}
+.albums-slide-stucture-shadow {
+    width: 100%;
+    height: 100%;
+    _height: 10000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    border-radius: 10px;
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.albums-slide-close-btn{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url(./images/album_icon.png);
+    background-position: -142px -51px;
+    right: 0;
+    top: 0;
+}
+.albums-slide-close-btn:hover{
+    background-position: -142px 0;
+
+}
+.albums-slide-handler-left, .albums-slide-handler-right {
+    width: 53px;
+    top: 0;
+    height: 100%;
+    z-index: 130;
+    position: absolute;
+}
+.albums-slide-handler-left{
+    left: -45px;
+}
+.albums-slide-handler-right{
+    right: -45px;
+}
+.albums-slide-handler-left a {
+    display: block;
+    width: 40px;
+    height: 80px;
+    background-image: url(./images/album_icon.png);
+    background-position: 0 -141px;
+    margin: 500% auto;
+}
+.albums-slide-handler-right a {
+    display: block;
+    width: 40px;
+    height: 80px;
+    background-image: url(./images/album_icon.png);
+    background-position: -38px -141px;
+    margin: 500% auto;
+}
+.albums-slide-handler-right a:hover {
+    background-position: -38px -218px;
+}
+.albums-slide-handler-left a:hover {
+    background-position: 0 -218px;
+}
