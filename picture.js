@@ -19,7 +19,7 @@
             var data = arr;//arr.slice((current-1)*2,current*2);
             var str = "";
             for(var i = 0;i <= (data.length-1);i++){
-                str +="<li class='photo-view-li'>" +
+                str +="<li class='photo-view-li' index="+ i +">" +
                     "<div class='shadow'>" +
                     "<div class='share'>分享到：" +
                     "<a class='sina-share' title='新浪微博' share-pic='http://img.labi.com/group2/M00/AE/D7/wKgCMFApt8zUFIuxAAGpWLG8nfw112=640x640.jpg'>新浪微博</a>" +
@@ -50,26 +50,26 @@
         $(".photo-view-li").click(function(){
             $(".albums-slide-container").css('display','block');
             $(".albums-slide-close-btn").css('z-index','145');
+            var path = $(this).attr("index");
             var arr = ["./images/wKgCMFApt9GNPaJmAAJGWgwLhEo105=C192x192+1+1.jpg","./images/wKgCO1Apt9G5mTeSAAH0q-tDsg4281=C192x192+1+1.jpg","./images/wKgCO1Apt82sNcBeAACUY9xf8CM109=C192x192+1+1.jpg","./images/wKgCO1Apt86_HltIAALH6ZFlk2A716=C192x192+1+1.jpg","./images/wKgCO1Apt829uEDGAAHSULufwik967=C192x192+1+1.jpg"];
             var curent = 1;
             var $comment = $(".albums-slide-photo-content");
-            // var imgSrc = $(".pics-img-container").attr("src");
-            // var img = "<img src = "+ imgSrc +">";
-            // $comment.html(img);
+
             function ren(curent){
                 var data =arr;
                 var str = "";
-                for(var i = 0;i<=(data.length-1);i++){
+                // for{(var i = 0;i<=(data.length-1);i++)
                     str +="<li>" +
-                        "<img data-idx="+ i +" src="+data[i]+">"+
+                        "<img src="+data[path]+">"+
                         "</li>";
-                }
+                // }
             console.log(str);
             $comment.html(str);
             }
             ren(curent);
 
-            $(".albums-slide-photo-content li").css("display","none");
+            // $(".albums-slide-photo-content li").css("display","none");
+
             // $(".albums-slide-photo-content li img").attr('src','path');
         });
 

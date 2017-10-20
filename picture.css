@@ -360,6 +360,7 @@ li{
     padding: 2px;
     border-radius: 3px;
     margin: 8px;
+    top:187px;
 }
 .albums-slide-stucture-shadow {
     width: 100%;
@@ -367,7 +368,7 @@ li{
     _height: 10000px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 187px;
     background: #000;
     border-radius: 10px;
     opacity: .4;
@@ -420,4 +421,7 @@ li{
 }
 .albums-slide-handler-left a:hover {
     background-position: 0 -218px;
+}
+.albums-slide-photo-content li{
+    position: relative;
 }
