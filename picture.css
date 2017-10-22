@@ -425,3 +425,10 @@ li{
 .albums-slide-photo-content li{
     position: relative;
 }
+.change_btn{
+    margin-top: 22px;
+}
+.change_btn span{
+    padding: 22px;
+    cursor: pointer;
+}
